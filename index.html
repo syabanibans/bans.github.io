@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Buat Andini Dwi</title>
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+    <h1>Hai Andini Dwi Mabestah</h1>
+    <img src="index.jpg" width="200" height="300"/>
+    <h1>Mau Ga Lu Jalan Ama Gua?</h1>
+    <a href="love.html">
+      <button id="btn_mau" onclick="alert('Yeayyy MAUU HEHEHE')">Mau</button>&nbsp;
+    </a>
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
+      Gamau
+    </button>
+  </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+</html>
